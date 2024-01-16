@@ -1,0 +1,287 @@
+@font-face {
+    font-family: font4pCard;
+    src: url(./FONT/Formula1-Italic.ttf);
+}
+@font-face {
+    font-family: font4headCard;
+    src: url(./FONT/Formula1-Black.ttf);
+}
+@font-face {
+    font-family: font4teamHead;
+    src: url(./FONT/Formula1-Bold_web.ttf);
+}
+* {
+    box-sizing: border-box;
+    /* outline: 2px dotted red; */
+}
+#body{
+    scroll-behavior: smooth;
+}
+/* Background Head */
+#head{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#head h1{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    /* transform: translate(-50%, -50%); */
+
+    font-family: font4teamHead;
+    font-size: 6rem;
+
+    color: rgb(255, 255, 255);
+    border-bottom: rgb(255, 255, 255) 5px solid;
+
+    
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+/* Background Teams */
+/* Red Bull */
+section{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+section:last-child {
+    min-height: 100vh;
+  }
+.redBull{
+    background-image: linear-gradient(to bottom, #3730ff, #D50000);
+}
+.mercedes{
+    background-image: linear-gradient(to bottom, #00D2BE, #41454d);
+}
+.ferrari{
+    background-image: linear-gradient(to bottom, #fbff00, #DC0000);
+}
+.mcLaren{
+    background-image: linear-gradient(to bottom, #FF8700, #3c3c3c);
+}
+.astonMartin{
+    background-image: linear-gradient(to bottom, #007AFF, #00FF29);
+}
+.alpine{
+    background-image: linear-gradient(to bottom, #0090FF, #FFFFFF);
+}
+.williams{
+    background-image: linear-gradient(to bottom, #005AFF, #FFFFFF);
+}
+.alphaTauri{
+    background-image: linear-gradient(to bottom, #2B4562, #E0E0E0);
+}
+.alfaRomeo{
+    background-image: linear-gradient(to bottom, #a70000, #760000);
+}
+.haas{
+    background-image: linear-gradient(to bottom, #FFFFFF, #E10600);
+}
+
+section:nth-child(5) {
+    /* background: linear-gradient(90deg, rgba(83,12,83,1) 0%, rgba(42,13,33,1) 100%); */
+}
+
+/* KA */
+body {
+    color: #fff;
+    font-family: 'Roboto'; 
+    font-family: sans-serif;
+    margin: 0;
+}
+body { overflow-x: hidden; }
+body { opacity: 0; }
+
+/* Card */
+#driverCard{
+    background-color: rgb(188, 188, 188);
+    width: 28vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    height: 44vw;
+    margin-bottom: 2vw;
+
+    border-radius: 2vw;
+
+    /* -webkit-box-shadow: 0px -1px 26px 14px rgba(0,0,0,0.72);
+    -moz-box-shadow: 0px -1px 26px 14px rgba(0,0,0,0.72);
+    box-shadow: 0px -1px 26px 14px rgba(0,0,0,0.72); */
+
+    -webkit-box-shadow: 10px 10px 27px -1px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 27px -1px rgba(0,0,0,1);
+box-shadow: 10px 10px 27px -1px rgba(0,0,0,1);
+
+    margin-left: 10.8vw;
+}
+/* Card Headline */
+.headlineCard{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    background-color: black;
+    border-radius: 2vw;
+
+    margin-bottom: 1vw;
+
+    height: 3vw;
+
+    font-family: font4headCard;
+    font-size: 1.3rem;
+}
+.headlineCard p{
+    height: 2vw;
+    margin: 0.3vw;
+    padding: 0;
+    margin-left: 1vw;
+    
+    color: red;
+
+    margin-top: 0.8vw;
+}
+.headlineCard h4{
+    height: 2vw;
+    margin: 0.3vw;
+    padding: 0;
+
+    margin-top: 0.8vw;
+    letter-spacing: 1px;
+}
+/* Card img */
+.picCard img{
+    width: 100%;
+}
+/* Card Infos */
+.infosCard{
+    font-size: 1.2rem;
+    font-family: font4pCard;
+    color: black;
+}
+/* Card Infos bigger*/
+.impP{
+    font-weight: bold;
+    margin-right: 0.3rem;
+}
+
+/* Team design */
+#teamDriver{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    grid-gap: 0vw;
+}
+
+#teamDriver h3{
+    text-transform: uppercase   ;
+    font-family: font4teamHead;
+    font-size: 1.6rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+
+    width: 37%;
+    margin-right: auto;
+    margin-top: 1vw;
+    padding: 3%;
+
+    border-radius: 0 2vw 2vw 0;
+
+    border-bottom: orange 4px solid;
+
+}
+/* footer */
+/* grid */
+#gridFooter{
+    display: grid;
+    grid-template-columns: 15% 60% 15%;
+    grid-gap: 5%;
+
+    height: 2vw;
+    margin-top: 1vw;
+}
+#gridFooter p{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: font4headCard;
+    text-transform: capitalize;
+
+    margin: 0;
+    padding: 0.8vw;
+}
+/* end Design */
+#end{
+    border-top: #000000 4px solid;
+    min-height: 8vw;
+    background-image: linear-gradient(to left bottom, #ffffff, #e7d6ee, #dfa9cf, #da7aa0, #ce4963, #b43347, #9a1d2d, #7f0015, #610719, #430c18, #260c12, #000000);
+}
+/* back to top button */
+#backTotop{
+    width: 100%;
+    
+    border-radius: 0 2vw 2vw 0;
+
+    background-color: #a70000;
+    border-left: black 5px solid;
+
+    -webkit-box-shadow: 14px 8px 32px -9px rgba(255,255,255,1);
+    -moz-box-shadow: 14px 8px 32px -9px rgba(255,255,255,1);
+    box-shadow: 14px 8px 32px -9px rgba(255,255,255,1);
+}
+#backTotop a, #linkWebsite a{
+    text-decoration: none;
+}
+/* filter button */
+#filter{
+    width: 100%;
+
+    border-radius: 2vw;
+
+    background-color: #a70000;
+
+    -webkit-box-shadow: 0px 0px 53px 1px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 53px 1px rgba(255,255,255,1);
+box-shadow: 0px 0px 53px 1px rgba(255,255,255,1);
+}
+/* Link webseite */
+#linkWebsite{
+    width: 100%;
+    
+    border-radius: 2vw 0 0vw 2vw;
+
+    background-color: #a70000;
+    border-right: black 5px solid;
+
+    -webkit-box-shadow: -14px 8px 32px -9px rgba(255,255,255,1);
+    -moz-box-shadow: -14px 8px 32px -9px rgba(255,255,255,1);
+    box-shadow: -14px 8px 32px -9px rgba(255,255,255,1);
+}
+#backTotop, #filter, #linkWebsite{
+    transition: all 0.77s ease;
+}
+#backTotop:hover, #filter:hover, #linkWebsite:hover{
+    background-color: #760000;
+}
+
+/* gif */
+#FerrariGifCar{
+    position: absolute;
+    width: 10vw;
+}
